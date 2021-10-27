@@ -1,167 +1,29 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
 }
 
 #main{
     text-align: center;
 }
 
-.container {  
-    padding: 40px;  
-}  
-
-input[type=text], input[type=password], textarea {  
-  width: 100%;  
-  padding: 15px;  
-  margin: 5px 0 22px 0;  
-  display: inline-block;  
-  border: none;  
-  background: #f1f1f1;  
-}  
-
-div {
-    padding: 10px 0;
-}  
 
 h1{
-    text-align: center;
+    text-align:center;
     text-decoration: underline;
 }
 
 
 .section{
-    position: relative;
-    height: 10vh;
-    margin: 12px;
-    padding: 12px;
-}
-
-.section .section-center {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-    -webkit-transform: translateY(-1%);
-    transform: translateY(-1%)
+    margin:12px;
+    padding:12px;
 }
 
 body{
     background-color: grey;
 }
 
-.checkboxes label {
-  display: block;
-  padding-right: 10px;
-  padding-left: 22px;
-  text-indent: -22px;
+.checkbox{
+    padding:11px;
+    margin: 12px;;
 }
-.checkboxes input {
-  vertical-align: middle;
-}
-.checkboxes label span {
-  vertical-align: middle;
-}
-
-#registration {
-            font-family: 'Raleway', sans-serif
-        }
-
-        .registration-form {
-            position: relative;
-            max-width: 642px;
-            width: 100%;
-            margin: auto;
-            padding: 20px;
-            overflow: hidden;
-            background-size: cover;
-            border-radius: 5px;
-            z-index: 20
-        }
-
-        .registration-form::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            background: rgba(29, 28, 28, 0.856);
-            z-index: -1
-        }
-
-        .registration-form .form-header {
-            text-align: center;
-            position: relative;
-            margin-bottom: 30px
-        }
-
-        .registration-form .form-header h2 {
-            font-weight: 700;
-            text-transform: capitalize;
-            font-size: 42px;
-            margin: 0px;
-            color: #fff
-        }
-
-        .registration-form .form-group {
-            position: relative;
-            margin-bottom: 30px
-        }
-
-        .registration-form .form-control {
-            background-color: rgba(29, 28, 28, 0.856);
-            height: 30px;
-            width: 50%;
-            padding: 0px 20px;
-            border: none;
-            border-radius: 40px;
-            color: #fff;
-            -webkit-box-shadow: 0px 0px 0px 2px transparent;
-            box-shadow: 0px 0px 0px 2px transparent;
-            -webkit-transition: 0.2s;
-            transition: 0.2s;
-            margin-left:auto;
-            margin-right: auto;
-            display: block;
-        }
-
-        .registration-form .form-control:focus {
-            -webkit-box-shadow: 0px 0px 0px 2px #ff8846;
-            box-shadow: 0px 0px 0px 2px #ff8846
-        }
-
-        .registration-form input[type="date"].form-control {
-            padding-top: 0px
-        }
-
-        .registration-form input[type="date"].form-control:invalid {
-            color: rgba(29, 28, 28, 0.856)
-        }
-
-        .registration-form input[type="date"].form-control+.form-label {
-            opacity: 1;
-            top: 10px
-        }
-
-.registerbtn {  
-  background-color: #B2BEB5;  
-  color: white;  
-  padding: 16px 20px;  
-  margin: 8px 0;  
-  border: none;  
-  cursor: pointer;  
-  width: 100%;  
-  opacity: 0.9;  
-}  
-.registerbtn:hover {  
-  opacity: 1;  
-}
-
-        .close:hover,
-        .close:focus {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        }
-        }
