@@ -11,8 +11,6 @@ let java=document.getElementById("Java");
 let javascript=document.getElementById("JavaScript");
 let python=document.getElementById("Python");
 
-var CurrentDate = new Date();
-
 form.addEventListener("submit", function (event) {
     if (!(validateUsername(username.value) && validatePassword(password.value))) {        
         event.preventDefault();
@@ -22,11 +20,10 @@ form.addEventListener("submit", function (event) {
         if(!validatePassword(password.value)){
             alert("Password must consist - Minimum 8 characters, 1 lowercase letter, 1 uppercase letter and 1 special character")
         }
-        if(!validateBirthdate(dob.value)){
-            alert("Date Of Birth must not be greater than today's date")
-        
-        }
     }
+    else if(!validateBirthdate(dob.value)){
+            alert("Date Of Birth must not be greater than today's date")
+        }
     else{
         document.write("Username: "+username.value);
         document.write("<br>Password: "+password.value);
@@ -67,7 +64,11 @@ function validatePassword(password) {
 }
 
 function validateBirthdate(dob){
-    if(dob > CurrentDate){
+    
+}
+function validateBirthdate(dob) {
+    var CurrentDate = new Date();
+    if(dob < CurrentDate){
         return true;
     }
     else{
