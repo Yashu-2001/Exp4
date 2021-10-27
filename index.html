@@ -10,53 +10,83 @@
 </head>
 
 <body>
-    <div id="main">
-        <h1> Online Form </h1>
-        <form id="form">
-            <div class="section">
-                <label> Username: </label>
-                <input type="text" id="username" required />
-                <br>
-            </div>
-            <div class="section">
-                <label> Password: </label>
-                <input type="password" id="password" required />
-                <br>
-            </div>
-            <div class="section">
-                <label> Email: </label>
-                <input type="email" id="email" required />
-                <br>
-            </div>
-            <div class="section">
-                <label> Date Of Birth: </label>
-                <input type="date" id="dob" required />
-                <br>
-            </div>
-            <div class="section">
-                <label> City: </label>
-                <select id="city" required>
-                    <option> Bangalore </option>
-                    <option> Chennai </option>
-                    <option> Mumbai </option>
-                    <option> New delhi </option>
-                </select>
-                <br>
-            </div>
-            <p> Programming Languages known: </p>
-            <div class="checkbox">
-                <input type="checkbox" id="C" value="C" />C
-                <input type="checkbox" id="Cpp" value="C++" />C++
-                <input type="checkbox" id="Java" value="Java" />Java
-                <input type="checkbox" id="JavaScript" value="JavaScript" />JavaScript
-                <input type="checkbox" id="Python" value="Python" />Python
-            </div>
-            <input type="submit" id="submit">
-        </form>
-
-    </div>
-
-    <script src="index.js"></script>
+    <div id="registration" class="section">
+            <div class="section-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="registration-form">
+                            <div class="form-header">
+                                <h2> Registration Form </h2>
+                            </div>
+                            <form id="form">
+                                <div class="form-group"> 
+                                    <label> Username: </label>
+                                    <input class="form-control" type="text" placeholder="Enter your Username" id="username" required> 
+                                    <br>
+                                </div>
+                                <div class="form-group"> 
+                                    <label> Password: </label>
+                                    <input class="form-control" type="password" placeholder="Enter your Password" id="password" required> 
+                                    <br>
+                                </div>
+                                <div class="form-group"> 
+                                    <label> Email: </label>
+                                    <input class="form-control" type="email" placeholder="Enter your Email" id="email" required> 
+                                    <br>
+                                </div>
+                                <div class="form-group"> 
+                                    <label> Date Of Birth: </label>
+                                    <input class="form-control" type="date" placeholder="Enter your Date Of Birth" id="dob" required> 
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="form-group"> 
+                                            <label> City: </label>
+                                            <select class="form-control" id="city">
+                                                <option> Bangalore </option>
+                                                <option> Chennai </option>
+                                                <option> Mumbai </option>
+                                                <option> New delhi </option>
+                                            </select>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="checkbox-label"> Programming Languages known:</label><br><br>
+                                        <div class="custom-control custom-checkbox mb-4"> 
+                                            <input id="C" type="checkbox" value="C" class="custom-control-input"> 
+                                            <label for="customCheck1" class="checkbox-label"> C </label> 
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-4"> 
+                                            <input id="Cpp" type="checkbox" value="C++" class="custom-control-input"> 
+                                            <label for="customCheck1" class="checkbox-label"> C++ </label> 
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-4">
+                                            <input id="Java" type="checkbox" value="Java" class="custom-control-input"> 
+                                            <label for="customCheck1" class="checkbox-label">Java</label> 
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-4"> 
+                                            <input id="JavaScript" type="checkbox" value="JavaScript" class="custom-control-input"> 
+                                            <label for="customCheck1" class="checkbox-label">JavaScript</label> 
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-4"> 
+                                            <input id="Python" type="checkbox" value="Python" class="custom-control-input"> 
+                                            <label for="customCheck1" class="checkbox-label">Python</label> 
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <br>
+                                    <div class="form-btn"> 
+                                        <input class="submit-btn" type="submit" value="Register Now" id="submit"> 
+                                    </div>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <script src="index.js"></script>
 
 </body>
 
