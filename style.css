@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
 }
+
+#main{
+    text-align: center;
+}
+
 .container {  
     padding: 40px;  
 }  
