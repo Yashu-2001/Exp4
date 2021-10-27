@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    text-align: center;
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.section{
+    margin: 12px;
+    padding: 12px;
+}
+
+body{
+    background-color: grey;
+}
+
+.checkbox{
+    padding: 11px;
+    margin: 12px;;
+}
