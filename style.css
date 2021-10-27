@@ -35,7 +35,7 @@ body{
 }
 
 .checkbox{
-    padding: 11px;
+    padding: 10px 30px;
     margin: 12px;;
 }
 
@@ -52,7 +52,6 @@ body{
             margin: auto;
             padding: 20px;
             overflow: hidden;
-            background-image: url("C:\Users\user\Downloads\Events Folder vscode-20210304T151300Z-001\Events Folder vscode\Events\static\bdaybg.jpg");
             background-size: cover;
             border-radius: 5px;
             z-index: 20
@@ -191,8 +190,8 @@ body{
             
         }
         .registration-form .submit-btn {
-            color: #fff;
-            background-color: #e76615;
+            color: rgb(0, 0, 0);
+            background-color: #070504b0;
             font-weight: 700;
             height: 60px;
             padding: 10px 30px;
