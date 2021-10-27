@@ -12,7 +12,7 @@ let javascript=document.getElementById("JavaScript");
 let python=document.getElementById("Python");
 
 form.addEventListener("submit", function (event) {
-    if (!(validateUsername(username.value) && validatePassword(password.value))) {        
+    if (!(validateUsername(username.value) && validatePassword(password.value) && validateBirthdate(dob.value))) {        
         event.preventDefault();
         if(!validateUsername(username.value)){
             alert("Username must be of maximum 20 characters")
@@ -20,10 +20,11 @@ form.addEventListener("submit", function (event) {
         if(!validatePassword(password.value)){
             alert("Password must consist - Minimum 8 characters, 1 lowercase letter, 1 uppercase letter and 1 special character")
         }
-    }
-    else if(!validateBirthdate(dob.value)){
+        if(!validateBirthdate(dob.value)){
             alert("Date Of Birth must not be greater than today's date")
         }
+    }
+    
     else{
         document.write("Username: "+username.value);
         document.write("<br>Password: "+password.value);
