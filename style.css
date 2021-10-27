@@ -39,8 +39,6 @@ body{
     margin: 12px;;
 }
 
-
-
 #registration {
             font-family: 'Raleway', sans-serif
         }
@@ -64,7 +62,7 @@ body{
             right: 0;
             bottom: 0;
             top: 0;
-            background: rgba(46, 0, 46, 0.85);
+            background: rgba(29, 28, 28, 0.856);
             z-index: -1
         }
 
