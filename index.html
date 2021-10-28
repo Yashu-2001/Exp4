@@ -1,64 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Form</title>
+    <title> Responsive Registration Form | CodingLab </title>
     <link rel="stylesheet" href="style.css">
-</head>
-
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <div id="main">
-        <h1>Online Form</h1>
-        <form id="form">
-            <div class="section">
-                <label>Username:</label>
-                <input type="text" id="username" required />
-                <br>
-            </div>
-            <div class="section">
-                <label>Password:</label>
-                <input type="password" id="password" required />
-                <br>
-            </div>
-            <div class="section">
-                <label>Email:</label>
-                <input type="email" id="email" required />
-                <br>
-            </div>
-            <div class="section">
-                <label>Date Of Birth:</label>
-                <input type="date" id="dob" required />
-                <br>
-            </div>
-            <div class="section">
-                <label>City:</label>
-                <select id="city" required>
-                    <option>Mumbai</option>
-                    <option>Delhi</option>
-                    <option>Hyderabad</option>
-                    <option>Chennai</option>
-                    <option>Bangalore</option>
-                </select>
-                <br>
-            </div>
-            <p>Programming Languages:</p>
-            <div class="checkbox">
-                <input type="checkbox" id="C" value="C" />C
-                <input type="checkbox" id="Cpp" value="C++" />C++
-                <input type="checkbox" id="Java" value="Java" />Java
-                <input type="checkbox" id="JavaScript" value="JavaScript" />JavaScript
-                <input type="checkbox" id="Python" value="Python" />Python
-            </div>
-            <input type="submit" id="submit">
-        </form>
-
+  <div class="container">
+    <div class="title">Registration Form</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username:</span>
+            <input type="text" id="username" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password:</span>
+            <input type="password" id="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email:</span>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date Of Birth:</span>
+            <input type="date" id="dob" placeholder="Enter your birth date" required>
+          </div>
+          <div class="gender-details">
+            <label>
+            <span class="details">City:</span>
+            </label>
+            <select id="city" required>
+              <option>Mumbai</option>
+              <option>Delhi</option>
+              <option>Hyderabad</option>
+              <option>Chennai</option>
+              <option>Bangalore</option>
+            </select>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="checkbox" id="C" value="C"> C
+          <input type="checkbox" id="Cpp" value="C++"> C++
+          <input type="checkbox" id="Java" value="Java"> Java
+          <input type="checkbox" id="JavaScript" value="JavaScript"> JavaScript
+          <input type="checkbox" id="Python" value="Python"> Python
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
     </div>
-
+  </div>
+    
     <script src="index.js"></script>
 
 </body>
-
 </html>
